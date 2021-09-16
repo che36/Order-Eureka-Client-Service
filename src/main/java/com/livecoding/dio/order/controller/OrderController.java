@@ -16,6 +16,8 @@ import java.util.Map;
 @RequestMapping("/api/v1")
 public class OrderController {
 
+    private OrderRepository orderRepository;
+
     public OrderController(OrderRepository orderRepository) {
         this.orderRepository = orderRepository;
     }
